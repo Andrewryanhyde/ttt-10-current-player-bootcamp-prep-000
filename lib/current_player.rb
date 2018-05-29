@@ -1,3 +1,10 @@
+
+
 def turn_count(board)
-  board.each do 
-    if 
+  gameCount = 0
+  board.each do |cube|
+    if cube == "X" || "O"
+      gameCount +=1
+    end
+end
+  
