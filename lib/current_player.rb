@@ -1,5 +1,3 @@
-
-
 def turn_count(board)
   gameCount = 0
   board.each do |space|
