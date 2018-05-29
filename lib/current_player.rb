@@ -10,9 +10,9 @@ end
   
   
   def current_player(board)
-    g = turn_count(board)
+    gameCount = turn_count(board)
     
-    if turns % 2 == 0 
+    if gameCount % 2 == 0 
       return "O"
     else 
       return "X"
