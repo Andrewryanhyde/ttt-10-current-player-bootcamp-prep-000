@@ -1,7 +1,7 @@
 def turn_count(board)
   gameCount = 0
   board.each do |space|
-    if space == "X" || "O"
+    if space == "X" || space == "O"
       gameCount += 1 
     end
   end
