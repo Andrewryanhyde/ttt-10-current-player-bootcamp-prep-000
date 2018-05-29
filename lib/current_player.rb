@@ -7,6 +7,6 @@ def turn_count(board)
       gameCount += 1 
     end
   end
-  return gameCount / 3
+  return gameCount
 end
   
