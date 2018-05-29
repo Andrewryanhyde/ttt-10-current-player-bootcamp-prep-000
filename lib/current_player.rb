@@ -1,18 +1,19 @@
 def turn_count(board)
-  turns = 0
+  gameCount = 0
   board.each do |space|
-    if space == "X" || space == "O"
-      turns += 1
+    if space == "X" || "O"
+      gameCount += 1 
     end
   end
-  return turns
+  return gameCount / 3
 end
-
-def current_player(board)
-  turns = turn_count(board)
-  if turns % 2 == 0
-    return "X"
-  else
-    return "O"
+  
+  
+  def current_player(board)
+    gameCount = turn_count(board)
+    if gameCount % 2 == 0 
+      return "O"
+    else 
+      return "X"
+    end
   end
-end
