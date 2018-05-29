@@ -5,8 +5,8 @@ def turn_count(board)
   board.each do |cube|
     if cube == "X" || "O"
       gameCount += 1 
-    else 
-      nothing
+    elseif cube = board[8]
+      return gameCount
     end
   end
 end
